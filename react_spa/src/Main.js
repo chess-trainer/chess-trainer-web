@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Home from "./Home";
 import Tactics from "./Tactics";
+import Visual from "./Visual";
 
 class Main extends Component {
   render() {
@@ -15,14 +16,18 @@ class Main extends Component {
           <ul className="header">
             <div class="menul">
               <li><NavLink to="/">Home</NavLink></li>
-              <li><NavLink to="/tactics">Tactics</NavLink></li>
+              <li class="dropdown">
+                <NavLink to="/tactics">Tactics</NavLink>
+                <div class="dropdown-content">
+                  <NavLink to="/visual">Visual</NavLink>
+                </div>
+              </li>
             </div>
             <div class="menur">
               <li class="dropdown">
                 <NavLink to="/contact">Username</NavLink>
                 <div class="dropdown-content">
                   <NavLink to="/login">Login</NavLink>
-                  <NavLink to="/register">Register</NavLink>
                 </div>
               </li>          
             </div>
@@ -30,6 +35,7 @@ class Main extends Component {
           <div className="content">
             <Route exact path="/" component={Home}/>
             <Route path="/tactics" component={Tactics}/>
+            <Route path="/visual" component={Visual}/>
           </div>
         </div>
       </HashRouter>
