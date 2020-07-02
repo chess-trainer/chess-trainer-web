@@ -101,10 +101,11 @@ ul.header li a {
 
 .viz-piece-left {
   font-weight: bold;
+  font-size: 28px;
   list-style-type: none;
   padding: 0;
   float: left;
-  width: 37%;
+  width: 42%;
   text-align: right;
 }
 
@@ -119,10 +120,11 @@ ul.viz-piece-left li {
 
 .viz-piece-right {
   font-weight: bold;
+  font-size: 28px;
   list-style-type: none;
   padding: 0;
   float: right;
-  width: 37%;
+  width: 42%;
   text-align: left;
 }
 
@@ -134,3 +136,4 @@ ul.viz-piece-right li {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
